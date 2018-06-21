@@ -14,7 +14,6 @@ print " "
 print " *************************** "
 
 print option
-print " "
 
 choice=raw_input("Enter your choice: ")
 
@@ -24,7 +23,7 @@ if choice == '0' :
 	print"plz wait wifi is checking..."
 	time.sleep(2)
 	w=commands.getoutput('iwconfig')
-	print 
+	print w
 	
 	if 'ESSID:off' in w :
 		print "wifi is not conneccted"
